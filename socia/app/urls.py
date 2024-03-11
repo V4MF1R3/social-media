@@ -1,8 +1,7 @@
 from django.contrib import admin
-from django.urls import path, include
-from app.views import user
+from django.urls import path
+from app.views.user import CreateUser
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('app.urls')),
+    path('user/create/', CreateUser.as_view()),
 ]
