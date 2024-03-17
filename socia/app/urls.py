@@ -8,3 +8,4 @@ urlpatterns = [
     path('user/<int:pk>/', RetrieveUser.as_view()),
     path('user/update/', UpdateUser.as_view()),
 ]
+# comment
